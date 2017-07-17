@@ -1,7 +1,40 @@
-body {
-	background-color: grey;
+*
+ {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
+.grid {
+    max-width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: blue; 
+  }
+
+
+.row {
+    max-width: 1140px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    //display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
 
 /*=====MEDIA QUERIES===*/
