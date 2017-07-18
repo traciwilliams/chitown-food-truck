@@ -15,7 +15,7 @@ img {
     max-width: 1140px;
     max-width: 100%;
     margin: 0 auto;
-    background-color: blue; 
+    background-color: orange; 
   }
 
 
@@ -27,9 +27,11 @@ img {
 }
 
 .container {
+    //background-color: pink;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 img {
@@ -37,4 +39,13 @@ img {
     height: auto;
 }
 
+.truck-icons {
+    font-size: 120%;
+    //background-color: yellow;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // justify-content: space-between;
+
+}
 /*=====MEDIA QUERIES===*/
