@@ -58,4 +58,50 @@ figcaption,
     // justify-content: space-between;
 
 }
+
+ul {
+    padding: 0;
+    //position: relative;
+    width: 100%;
+    margin: 10px 10px 30px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    //float: left;
+    //padding: 10px 20px;
+    //color: #fff;
+    border: 1px solid #fff;
+    //margin-right: 15px;
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+
+.breakfast {
+    background: #2ecc71;
+}
+
+.lunch {
+    background: #f1c40f;
+}
+
+.dinner {
+    background: #3498db;
+}
+
+.late-eats {
+    background: #e74c3c;
+}
+
+.snacks {
+    background: #9b59b6;
+}
+
+
+
+
+
+
 /*=====MEDIA QUERIES===*/

@@ -3,6 +3,7 @@
 <head>
 	<title>ChiTown Food Truck</title>
 	<meta charset = "UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 	
 	<!-- <link rel="stylesheet" type="text/css" href="styles/main2.css"> -->
 	<link rel="stylesheet" type="text/css" href="styles/myframework.css">
@@ -12,7 +13,9 @@
 
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+	
 </head>
 <body>
 
@@ -20,23 +23,36 @@
 		<header>
 			<h1>ChiTown Food Trucks</h1>
 			<input type="search" placeholder="search here">
-			<nav></nav>
+			<nav>
+				
+			<ul>
+				<li class="button active" data-filter="all">All</li>
+				<li class="button" data-filter="breakfast">Breakfast</li>
+				<li class="button" data-filter="lunch">Lunch</li>
+				<li class="button" data-filter="dinner">Dinner</li>
+				<li class="button" data-filter="late-eats">Late Eats</li>
+				<li class="button" data-filter="snacks">Snacks</li>
+			</ul>	
+			</nav>
 		</header>
 
 
 
-	<div class="container">	
+	<div class="container">
 
-		<figure>
-			<img src="styles/images/beavers.png">
-			<figcaption>Some Text Here</figcaption>
-			<div class="truck-icons">
-				<i class="fa fa-facebook-square" aria-hidden="true"> Facebook</i> 
-				<br>
-				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
-			</div>
-		</figure>
+		<div class="box filter breakfast">
+			<figure>
+				<img src="styles/images/beavers.png">
+				<figcaption>Some Text Here</figcaption>
+				<div class="truck-icons">
+					<i class="fa fa-facebook-square" aria-hidden="true"> Facebook</i> 
+					<br>
+					<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
+				</div>
+			</figure>
+		</div>
 
+		<div class="box filter breakfast">
 		<figure>
 			<img src="styles/images/empanadas.png">
 			<figcaption>Some Text Here</figcaption>
@@ -44,9 +60,11 @@
 				<i class="fa fa-facebook-square" aria-hidden="true"> Facebook</i> 
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
-			</div>
-
+			</div>	
 		</figure>
+		</div>
+
+		<div class="box filter lunch">
 		<figure>
 			<img src="styles/images/giordanos.png">
 			<figcaption>Some Text Here</figcaption>
@@ -55,8 +73,10 @@
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
-
 		</figure>
+		</div>
+
+		<div class="box filter lunch">
 		<figure>
 			<img src="styles/images/jerk.png">
 			<figcaption>Some Text Here</figcaption>
@@ -65,8 +85,10 @@
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
-
 		</figure>
+		</div>
+
+		<div class="box filter snacks">
 		<figure>
 			<img src="styles/images/la-cocinita.png">
 			<figcaption>Some Text Here</figcaption>
@@ -75,8 +97,11 @@
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
-
 		</figure>
+		</div>
+
+
+		<div class="box filter snacks">
 		<figure>
 			<img src="styles/images/slide-ride.png">
 			<figcaption>Some Text Here</figcaption>
@@ -87,6 +112,10 @@
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
 		</figure>
+		</div>
+
+
+		<div class="box filter dinner">
 		<figure>
 			<img src="styles/images/beavers.png">
 			<figcaption>Some Text Here</figcaption>
@@ -96,7 +125,10 @@
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
 		</figure>
+		</div>
 
+
+		<div class="box filter dinner">
 		<figure>
 			<img src="styles/images/empanadas.png">
 			<figcaption>Some Text Here</figcaption>
@@ -105,8 +137,10 @@
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
-
 		</figure>
+		</div>
+
+		<div class="box filter late-eats">
 		<figure>
 			<img src="styles/images/giordanos.png">
 			<figcaption>Some Text Here</figcaption>
@@ -115,8 +149,10 @@
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
-
 		</figure>
+		</div>
+
+		<div class="box filter late-eats">
 		<figure>
 			<img src="styles/images/jerk.png">
 			<figcaption>Some Text Here</figcaption>
@@ -125,8 +161,9 @@
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
-
 		</figure>
+
+		<div class="box filter late-eats">
 		<figure>
 			<img src="styles/images/la-cocinita.png">
 			<figcaption>Some Text Here</figcaption>
@@ -135,8 +172,10 @@
 				<br>
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
-
 		</figure>
+		</div>
+	
+		<div class="box filter snacks">
 		<figure>
 			<img src="styles/images/slide-ride.png">
 			<figcaption>Some Text Here</figcaption>
@@ -147,6 +186,7 @@
 				<i class="fa fa-map-marker" aria-hidden="true"> Location</i>
 			</div>
 		</figure>
+		</div>
 	</div><!--end of container div-->	
 
 
